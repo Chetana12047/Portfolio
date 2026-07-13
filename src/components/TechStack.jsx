@@ -1,4 +1,4 @@
-import "../styles/techstack.css";
+import "../styles/techStack.css";
 
 export default function TechStack() {
   return (
