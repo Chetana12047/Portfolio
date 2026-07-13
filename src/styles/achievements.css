@@ -1,0 +1,453 @@
+.achievements{
+
+    position:relative;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    z-index:2;
+
+    width:min(1100px,90%);
+    margin:0 auto;
+
+    padding:90px 0 90px;
+}
+.achievement-header{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:20px;
+}
+
+.section-tag{
+
+    text-align:center;
+
+    font-size:1rem;
+
+    letter-spacing:10px;
+
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.68);
+
+    margin-bottom:22px;
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.5rem;
+
+    font-weight:500;
+
+    color:#f5f5f5;
+
+    margin-bottom:60px;
+    margin-top: 15px;
+}
+
+.achievement-card{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    width:80%;
+    min-height:320px;
+
+    gap:35px;
+
+    padding:22px 26px;
+
+    margin-bottom:50px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:transparent;
+
+    backdrop-filter:none;
+
+    transition:.35s ease;
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(255,255,255,.18);
+
+    background:rgba(255,255,255,.04);
+
+    box-shadow:0 0 30px rgba(255,255,255,.04);
+}
+.achievement-icon{
+
+    width:64px;
+    height:64px;
+
+    flex-shrink:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:transparent;
+}
+.achievement-content{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    padding-right:28px;
+}
+.achievement-content h3{
+
+    font-size:1.8rem;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:500;
+
+    color:#fff;
+
+    margin-bottom:6px;
+}
+
+.achievement-subtitle{
+
+    display:inline-block;
+
+    margin-bottom:0;
+
+    font-size:.95rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.62);
+}
+
+.achievement-content p{
+
+    color:rgba(255,255,255,.78);
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    margin:18px 0 24px;
+}
+
+.achievement-content strong{
+
+    color:#ffffff;
+
+    font-weight:600;
+}
+
+.achievement-content ul{
+
+    list-style:none;
+
+    display:grid;
+
+    gap:10px;
+
+    margin-bottom:28px;
+}
+
+.achievement-content li{
+
+    position:relative;
+
+    padding-left:24px;
+
+    color:rgba(255,255,255,.72);
+
+    line-height:1.8;
+}
+
+.achievement-content li::before{
+
+    content:"◆";
+
+    position:absolute;
+
+    left:0;
+
+    color:rgba(255,255,255,.45);
+
+    font-size:.75rem;
+}
+
+.section-divider{
+
+    width:90px;
+    height:1px;
+
+    margin:55px auto 0;
+
+    background:rgba(255,255,255,.18);
+}
+.achievement-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:-80px;
+}
+.achievement-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:180px;
+
+    height:50px;
+
+    border:1px solid rgba(255,255,255,.14);
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:1.15rem;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.achievement-btn:hover{
+
+    background:rgba(255,255,255,.05);
+
+    border-color:rgba(255,255,255,.22);
+}
+
+.achievement-btn svg{
+
+    font-size:15px;
+
+    transition:.3s ease;
+}
+
+.achievement-btn:hover svg{
+
+    transform:scale(1.08);
+}
+
+/* phone  */
+
+@media screen and (max-width:768px){
+
+    .achievements{
+
+        width:72%;
+        padding:90px 0 40px;
+    }
+
+    .section-tag{
+
+        font-size:.72rem;
+        letter-spacing:4px;
+        line-height:1.5;
+        margin-bottom:18px;
+    }
+
+    .section-title{
+
+        font-size:2.2rem;
+        margin:25px 0 28px;
+    }
+
+    /* ---------------- Card ---------------- */
+
+    .achievement-card{
+
+        display:block;
+
+        width:100%;
+        min-height:auto;
+
+        padding:20px 18px;
+
+        margin-bottom:30px;
+
+        background:rgba(255,255,255,.025);
+
+        border:1px solid rgba(255,255,255,.08);
+
+        backdrop-filter:blur(8px);
+    }
+
+    .achievement-card:hover{
+
+        transform:none;
+
+        background:rgba(255,255,255,.025);
+
+        box-shadow:none;
+    }
+
+    /* ---------------- Header ---------------- */
+
+    .achievement-header{
+
+        display:flex;
+
+        align-items:center;
+
+        gap:14px;
+
+        margin-bottom:18px;
+    }
+
+    .achievement-icon{
+
+        width:52px;
+        height:52px;
+
+        margin:0;
+
+        flex-shrink:0;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .achievement-icon svg{
+
+        width:24px;
+        height:24px;
+    }
+
+    .achievement-heading{
+
+        flex:1;
+    }
+
+    .achievement-content{
+
+        padding:0;
+    }
+
+    .achievement-content h3{
+
+        font-size:1.45rem;
+
+        line-height:1.2;
+
+        margin-bottom:6px;
+    }
+
+    .achievement-subtitle{
+
+        display:block;
+
+        margin:0;
+
+        font-size:.72rem;
+
+        letter-spacing:2px;
+    }
+
+    /* ---------------- Description ---------------- */
+
+    .achievement-content p{
+
+        font-size:.92rem;
+
+        line-height:1.72;
+
+        margin:18px 0;
+
+        color:rgba(255,255,255,.76);
+    }
+
+    /* ---------------- Bullets ---------------- */
+
+    .achievement-content ul{
+
+        gap:8px;
+
+        margin-bottom:22px;
+    }
+
+    .achievement-content li{
+
+        font-size:.9rem;
+
+        line-height:1.6;
+
+        padding-left:18px;
+    }
+
+    .achievement-content li::before{
+
+        font-size:.55rem;
+    }
+
+    /* ---------------- Button ---------------- */
+
+    .achievement-actions{
+
+        display:flex;
+
+        justify-content:center;
+
+        margin-top:18px;
+    }
+
+    .achievement-btn{
+
+        width:155px;
+        height:40px;
+
+        min-width:155px;
+
+        font-size:.88rem;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        gap:8px;
+    }
+
+    .achievement-btn svg{
+
+        width:14px;
+        height:14px;
+    }
+
+    .section-divider{
+
+        margin-top:45px;
+    }
+
+}

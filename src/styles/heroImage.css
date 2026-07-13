@@ -1,0 +1,131 @@
+.hero-image{
+
+    width:210px;
+    height:210px;
+
+    margin:18px auto 30px;
+
+    border-radius:50%;
+
+    position:relative;
+    top: 18px;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transform:scale(.75);
+
+    animation:photoReveal .9s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay:.15s;
+}
+
+.hero-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:2px solid rgba(255,255,255,.18);
+
+}
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+    inset:-8px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    animation:ring 12s linear infinite;
+
+}
+
+.hero-image::after{
+
+    content:"";
+
+    position:absolute;
+    inset:-22px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(255,255,255,.12),
+        transparent 72%
+    );
+
+    z-index:-1;
+
+    animation:pulse 3s ease-in-out infinite;
+
+}
+
+@keyframes photoReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.75);
+
+        filter:
+        blur(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+        filter:
+        blur(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%,100%{
+
+        transform:scale(1);
+        opacity:.35;
+
+    }
+
+    50%{
+
+        transform:scale(1.06);
+        opacity:.7;
+
+    }
+
+}
+
+@keyframes ring{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

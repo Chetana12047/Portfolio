@@ -1,0 +1,239 @@
+.techstack{
+
+    min-height:100vh;
+
+    position:relative;
+    z-index:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:70px 8%;
+
+    pointer-events:none;
+}
+
+.techstack-container{
+
+    width:85%;
+    max-width:1300px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    pointer-events:auto;
+}
+
+.techstack-tag{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1rem;
+
+    letter-spacing:10px;
+
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.68);
+
+    margin-bottom:42px;
+    position: relative;
+
+    top: -20px;
+}
+
+.tech-grid{
+
+    width:100%;
+
+    display:grid;
+    flex-wrap: wrap;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:22px 22px;
+}
+
+.tech-card{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+
+    min-height:140px;
+
+    gap:12px;
+
+    padding:22px 24px;
+
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:16px;
+
+    background:rgba(255,255,255,.012);
+
+    transition:.3s ease;
+}
+
+.tech-card:hover{
+
+    border-color:rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.025);
+
+    transform:translateY(-2px);
+}
+
+.tech-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.95rem;
+
+    font-weight:500;
+
+    color:#f5f5f5;
+}
+
+.tech-items{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.98rem;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.72);
+
+    font-weight:300;
+}
+
+.tech-items span{
+
+    transition:.3s ease;
+}
+
+.tech-items span:hover{
+
+    color:white;
+}
+
+@media(max-width:800px){
+
+    .tech-grid{
+
+        grid-template-columns:1fr;
+
+        gap:22px;
+    }
+
+    .tech-card{
+
+        padding:18px;
+    }
+
+    .tech-card h3{
+
+        font-size:1.7rem;
+    }
+
+    .tech-items{
+
+        font-size:.95rem;
+    }
+}
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+}
+
+.nav-links a{
+
+    cursor:pointer;
+}
+.tech-divider{
+
+    width:90px;
+    height:1px;
+    position:relative;
+
+    top:60px;
+    background:rgba(255,255,255,.18);
+}
+
+/* phone */
+
+@media screen and (max-width:768px){
+
+    .techstack{
+
+        min-height:auto;
+
+        padding:90px 0 60px;
+    }
+
+    .techstack-container{
+
+        width:83%;
+
+        margin:0 auto;
+    }
+
+    .techstack-tag{
+
+        top:0;
+
+        margin-bottom:34px;
+
+        font-size:.75rem;
+
+        letter-spacing:7px;
+    }
+
+    .tech-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .tech-card{
+
+        min-height:auto;
+
+        padding:18px 18px;
+
+        border-radius:12px;
+    }
+
+    .tech-card h3{
+
+        font-size:1.95rem;
+
+        margin-bottom:2px;
+    }
+
+    .tech-items{
+
+        font-size:.92rem;
+
+        line-height:1.75;
+
+        word-break:break-word;
+    }
+
+    .tech-divider{
+
+        top:45px;
+    }
+
+}

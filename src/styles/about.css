@@ -1,0 +1,303 @@
+.about{
+    min-height:100vh;
+    position: relative;
+    z-index: 1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:70px 8% 160px;
+}
+
+.about-container{
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.about-tag{
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 1rem;
+
+    letter-spacing: 10px;
+
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,.68);
+
+    margin-bottom: 30px;
+}
+
+.about-title{
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 4.5rem;
+
+    font-weight: 500;
+
+    color: #f5f5f5;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content{
+
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: justify;
+}
+
+.about-description{
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 1.15rem;
+
+    line-height: 2.3;
+
+    color: rgba(255,255,255,.78);
+
+    font-weight: 300;
+
+    letter-spacing: .2px;
+}
+
+.about-description span{
+
+    color: #ffffff;
+
+    font-weight: 500;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .about{
+
+        padding: 90px 8%;
+    }
+
+    .about-title{
+
+        font-size: 3rem;
+
+        margin-bottom: 55px;
+    }
+
+    .about-tag{
+
+        letter-spacing: 5px;
+    }
+
+    .about-description{
+
+        font-size: 1rem;
+
+        line-height: 1.5;
+
+        text-align: left;
+    }
+
+}
+/* ===========================
+   Areas of Interest
+=========================== */
+
+.interest-section{
+
+    margin-top:-18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    width:100%;
+}
+
+.interest-line{
+
+    width:90px;
+    height:1px;
+
+    background:rgba(255,255,255,.18);
+
+    margin-bottom:30px;
+}
+
+.interest-heading{
+
+    font-size:.95rem;
+
+    letter-spacing:8px;
+
+    color:rgba(255,255,255,.65);
+
+    margin-bottom:35px;
+}
+
+.interest-list{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+}
+
+.interest-list span{
+
+    padding:12px 22px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.03);
+
+    color:rgba(255,255,255,.85);
+
+    font-size:.95rem;
+    padding: 10px 18px;
+    font-size: .9rem;
+
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.02);
+
+    transition:.35s ease;
+}
+
+.interest-list span:hover{
+
+    transform:translateY(-3px);
+
+    border-color:rgba(255,255,255,.28);
+
+    background:rgba(255,255,255,.06);
+}
+
+/* phone */
+@media screen and (max-width:768px){
+
+    .about{
+
+        min-height:auto;
+
+        padding:90px 0 60px;
+    }
+
+    .about-container{
+
+        width:70%;
+
+        margin:0 auto;
+    }
+
+    .about-tag{
+
+        margin-bottom:28px;
+
+        font-size:.75rem;
+
+        letter-spacing:7px;
+    }
+
+    .about-content{
+
+        width:100%;
+        max-width:100%;
+
+        gap:22px;
+    }
+
+    .about-description{
+
+    font-size:.95rem;
+
+    line-height:2;
+
+    text-align:justify;
+
+    text-justify:inter-word;
+
+    hyphens:auto;
+
+    color:rgba(255,255,255,.8);
+
+    letter-spacing:.2px;
+}
+
+    .interest-section{
+
+        margin-top:6px;
+    }
+
+    .interest-line{
+
+        width:70px;
+
+        margin-bottom:24px;
+    }
+
+    .interest-heading{
+
+        font-size:.72rem;
+
+        letter-spacing:6px;
+
+        text-align:center;
+
+        margin-bottom:24px;
+    }
+
+    .interest-list{
+
+        justify-content:center;
+
+        gap:12px;
+    }
+
+    .interest-list span{
+
+        padding:9px 15px;
+
+        font-size:.82rem;
+
+        line-height:1.4;
+    }
+
+}

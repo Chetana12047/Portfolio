@@ -1,0 +1,178 @@
+.brand-signature{
+
+    position:relative;
+    top:38px; 
+    color:rgba(255,255,255,1)!important;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:40px;
+
+    height:40px;
+
+    cursor:pointer;
+}
+
+.brand-logo{
+
+    color:rgba(255,255,255,1) !important;
+    transition:color .35s ease;
+
+    font-size:1.15rem;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:600;
+
+    user-select:none;
+}
+
+.brand-words{
+
+    position:absolute;
+    pointer-events:none;
+    opacity:0;
+
+    transition:opacity .3s ease;
+
+    left:28px;
+
+    top:62px;
+
+    transform:translateY(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2px;
+
+    pointer-events:none;
+}
+
+.brand-words span{
+
+    color:rgba(255,255,255,.60);
+
+    opacity:0;
+
+    transform:translateX(18px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease,
+        color .35s ease;
+}
+
+.brand-words.show{
+    opacity:1;
+}
+
+/* .brand-words.bright span{
+
+    color:#ffffff;                
+} */
+
+.brand-words.hovered span{
+
+    color:#fff;
+}
+
+.brand-letter{
+
+    color:rgba(255,255,255,.60);
+
+    transition:color .35s ease;
+
+    top:10px!important;
+    margin-left:20px!important;
+
+    font-size:2.7rem!important;
+
+    line-height:1;
+
+    display:inline-block;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:700 !important;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:geometricPrecision;
+}
+
+.brand-letter.hovered{
+
+    color:#fff;
+}
+.brand-popup{
+
+    position:absolute;
+
+    left:42px;
+    top:68px;
+
+    width:170px;
+
+    height:132px;
+
+    transform:translateY(-50%);
+
+    background:rgba(0,0,0,.82);
+
+    border-radius:14px;
+
+    opacity:0;
+
+    transition:opacity .35s ease;
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+.brand-popup.show{
+
+    opacity:1;
+}
+
+/* phone */
+@media screen and (max-width:768px){
+    .brand-letter{
+        font-size:2rem!important;
+    }
+    .brand-popup{
+
+        left: 20px;
+        margin-top:-14px;        
+
+        padding: 8px 12px;
+
+        border-radius: 12px;
+
+        min-width: 95px;
+
+        max-width: 140px;
+        height: 110px;
+
+    }
+
+    .brand-words{
+
+        gap: 2px;
+
+    }
+
+    .brand-words span{
+
+        line-height: 1.15;
+
+        letter-spacing: .4px;
+
+    }
+}
