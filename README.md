@@ -1,6 +1,6 @@
 # ✨ Chetana Ingle — Portfolio
 
-Welcome to my personal portfolio website.
+Welcome to my personal portfolio website!
 
 This portfolio reflects my journey as a Computer Science student passionate about **Artificial Intelligence**, **Full Stack Development**, and **Software Engineering**. It showcases my technical projects, certifications, leadership experience, achievements, and the work I've built with curiosity, precision, and purpose.
 
