@@ -6,7 +6,7 @@ This portfolio reflects my journey as a Computer Science student passionate abou
 
 ---
 
-## 🌐 Live Website - https://portfolio-sigma-lac-eix83l0t5w.vercel.app/
+## 🌐 Live Website - https://chetanaingle-portfolio.vercel.app/
 
 ---
 
