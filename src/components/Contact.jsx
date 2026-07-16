@@ -63,6 +63,7 @@ export default function Contact() {
           </div>
 
         </div>
+        <div className="resume-btns">
 
         <a
           href="/Resume.pdf"
@@ -72,6 +73,16 @@ export default function Contact() {
         >
           Resume
         </a>
+
+        <a
+          href="/CurriculumVitae.pdf"
+          className="resume-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CV
+        </a>
+        </div>
 
       </div>
 
