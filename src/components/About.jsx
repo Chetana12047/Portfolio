@@ -13,11 +13,11 @@ export default function About() {
         <div className="about-content">
 
           <p className="about-description">
-            I am a final-year Computer Science student passionate about
+            I am a Computer Engineering graduate passionate about
             Artificial Intelligence, Full Stack Development, and Software
             Engineering. I enjoy building meaningful applications that combine
             technical excellence with thoughtful design to solve real-world
-            problems.
+            problems and create pragmatic, user-focused digital experiences.
           </p>
 
           <p className="about-description">

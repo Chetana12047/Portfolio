@@ -3,11 +3,13 @@ import {
   Trophy,
   Music4,
   Crown,
+  Award,
 } from "lucide-react";
 import {
   FaLightbulb,
   FaAward,
   FaMedal,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import { useState } from "react";
 import CertificateModal from "./CertificateModal";
@@ -76,6 +78,56 @@ const closeCertificate = () => {
       >
         <FaLightbulb size={15}/>
         Explore Idea
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+<div className="achievement-card">
+
+  <div className="achievement-content">
+
+    <div className="achievement-header">
+
+      <div className="achievement-icon">
+        <Award size={34} strokeWidth={1.8} />
+      </div>
+
+      <div className="achievement-heading">
+        <h3>Google Developer Profile</h3>
+
+        <span className="achievement-subtitle">
+          Public Developer Profile • Skill Development
+        </span>
+      </div>
+
+    </div>
+
+    <p>
+      Recognized through the Google Developer Program for completing hands-on
+      learning experiences and earning verified skill badges.
+    </p>
+
+    <ul>
+      <li>15 Google Developer Skill Badges</li>
+      <li>Machine Learning Path</li>
+    </ul>
+
+    <div className="achievement-actions">
+
+      <button
+        className="achievement-btn"
+        onClick={() =>
+          window.open(
+            "https://me.developers.google.com/u/109961771031311950661",
+            "_blank"
+          )
+        }
+      >
+        <FaExternalLinkAlt size={14} />
+        View Profile
       </button>
 
     </div>
