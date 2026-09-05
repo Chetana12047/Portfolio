@@ -3,13 +3,14 @@ import {
   Trophy,
   Music4,
   Crown,
-  Award,
 } from "lucide-react";
 import {
   FaLightbulb,
   FaAward,
   FaMedal,
   FaExternalLinkAlt,
+  FaGoogle,
+  FaMicrosoft,
 } from "react-icons/fa";
 import { useState } from "react";
 import CertificateModal from "./CertificateModal";
@@ -92,7 +93,7 @@ function Achievements() {
           <div className="achievement-header">
 
             <div className="achievement-icon">
-              <Award size={34} strokeWidth={1.8} />
+              <FaGoogle size={28} />
             </div>
 
             <div className="achievement-heading">
@@ -143,7 +144,7 @@ function Achievements() {
           <div className="achievement-header">
 
             <div className="achievement-icon">
-              <Award size={34} strokeWidth={1.8} />
+              <FaMicrosoft size={28} />
             </div>
 
             <div className="achievement-heading">
