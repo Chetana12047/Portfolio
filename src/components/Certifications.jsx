@@ -9,12 +9,12 @@ export default function Certifications() {
   const openCertificate = (path) => {
     setSelectedCertificate(path);
     setIsOpen(true);
-    };
+  };
 
   const closeCertificate = () => {
     setIsOpen(false);
     setSelectedCertificate("");
-    };
+  };
   return (
     <section id="certifications" className="certifications">
       <div className="certifications-container">
@@ -33,11 +33,11 @@ export default function Certifications() {
               <div className="certificate-header">
                 <h3>Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/oracle-ai-foundations.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/oracle-ai-foundations.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
@@ -49,21 +49,20 @@ export default function Certifications() {
 
             <div className="certificate-card">
               <div className="certificate-header">
-                <h3>Delta – Full Stack Web Development</h3>
+                <h3>AWS Cloud Quest: Cloud Practitioner</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/delta-fullstack.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/aws.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
               <p>
-                Apna College
+                AWS Training & Certification
                 <br />
-                HTML • CSS • JavaScript • React • Node.js • Express • MongoDB •
-                SQL
+                Cloud Fundamentals • AWS Services • Cloud Infrastructure
               </p>
             </div>
 
@@ -72,11 +71,11 @@ export default function Certifications() {
               <div className="certificate-header">
                 <h3>Data Structures & Algorithms with Java</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/dsa-java.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/dsa-java.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
@@ -88,38 +87,17 @@ export default function Certifications() {
 
             </div>
 
-            <div className="certificate-card">
-
-              <div className="certificate-header">
-                <h3>Oasis Infobyte Internships</h3>
-                <button
-                    onClick={() =>
-                        openCertificate("/certificates/oasis.pdf")
-                    }
-                >
-                    View
-                </button>
-              </div>
-
-              <p>
-                Oasis Infobyte
-                <br />
-                Python Programming • Java Development • Data Science • Security Analyst
-              </p>
-
-            </div>
-            
 
             <div className="certificate-card">
 
               <div className="certificate-header">
                 <h3>International Bootcamp on DSA for DeepTech</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/dsa-deeptech.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/dsa-deeptech.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
@@ -141,11 +119,11 @@ export default function Certifications() {
               <div className="certificate-header">
                 <h3>Oracle Cloud Infrastructure 2025 Foundations Associate</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/oracle-foundations.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/oracle-foundations.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
@@ -153,42 +131,39 @@ export default function Certifications() {
                 Oracle University
                 <br />
                 Cloud Infrastructure fundamentals: Compute, Networking and Security.
-                </p>
+              </p>
 
             </div>
 
             <div className="certificate-card">
-
-              <div className="certificate-header different-positioning">
-                <h3>
-                  International Conference on Contemporary Engineering &
-                  Technology
-                </h3>
+              <div className="certificate-header">
+                <h3>Delta – Full Stack Web Development</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/Conference.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/delta-fullstack.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
-              <p> ICCET 2026 <br />
-                Certificate of Presentation — SkillSage: Adaptive Career
-                Roadmap Generator
+              <p>
+                Apna College
+                <br />
+                HTML • CSS • JavaScript • React • Node.js • Express • MongoDB •
+                SQL
               </p>
-
             </div>
             <div className="certificate-card">
 
               <div className="certificate-header">
                 <h3>Data Structures & Algorithms with C++</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/dsa-cpp.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/dsa-cpp.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
@@ -203,41 +178,20 @@ export default function Certifications() {
             <div className="certificate-card">
 
               <div className="certificate-header">
-                <h3>Data Analytics Internship</h3>
+                <h3>Career Essentials in Generative AI</h3>
                 <button
-                    onClick={() =>
-                        openCertificate("/certificates/internshipstudio.pdf")
-                    }
+                  onClick={() =>
+                    openCertificate("/certificates/career-essentials-ai.pdf")
+                  }
                 >
-                    View
+                  View
                 </button>
               </div>
 
-              <p>
-                Internship Studio
-                <br />
-                Hands-on experience in data analysis, reporting and visualization. 
-              </p>
-
-            </div>
-            
-            <div className="certificate-card">
-
-            <div className="certificate-header">
-            <h3>Career Essentials in Generative AI</h3>
-            <button
-                onClick={() =>
-                   openCertificate("/certificates/career-essentials-ai.pdf")
-                }
-            >
-                View
-            </button>
-            </div>
-
-            <p>Microsoft × LinkedIn Learning
+              <p>Microsoft × LinkedIn Learning
                 <br />
                 Explored Generative AI fundamentals and responsible AI practices.
-            </p>
+              </p>
 
             </div>
 
@@ -245,15 +199,127 @@ export default function Certifications() {
 
         </div>
 
+        {/* INTERNSHIPS */}
+
+        <p className="certifications-tag internship-heading">
+
+          Internships
+
+        </p>
+     
+        <div className="certifications-grid">
+          <div className="certificate-card">
+
+              <div className="certificate-header">
+                <h3>Oasis Infobyte</h3>
+                <button
+                  onClick={() =>
+                    openCertificate("/certificates/oasis.pdf")
+                  }
+                >
+                  View
+                </button>
+              </div>
+
+              <p>
+                Technical Intern
+                <br />
+                Python Programming • Java Development • Data Science • Security Analyst
+              </p>
+
+            </div>
+
+            <div className="certificate-card">
+
+              <div className="certificate-header">
+                <h3>Internship Studio</h3>
+                <button
+                  onClick={() =>
+                    openCertificate("/certificates/internshipstudio.pdf")
+                  }
+                >
+                  View
+                </button>
+              </div>
+
+              <p>
+                Data Analytics Intern
+                <br />
+                Hands-on experience in data analysis, reporting and visualization.
+              </p>
+
+            </div>
+
+            <div className="certificate-card">
+
+              <div className="certificate-header">
+                <h3>Skill Vedant</h3>
+                <button
+                  onClick={() =>
+                    openCertificate("/certificates/skills-vedant.pdf")
+                  }
+                >
+                  View
+                </button>
+              </div>
+
+              <p>
+                AI & Gen AI
+                <br />
+                AI • Generative AI • Industry-Oriented Projects • Technical Skill Development
+              </p>
+
+            </div>
+
+
+        </div>
+
+        {/* CONFERENCES */}
+
+        <p className="certifications-tag internship-heading">
+
+          Conferences
+
+        </p>
+
+        <div className="certifications-grid">
+
+          <div className="certificate-card">
+
+              <div className="certificate-header different-positioning">
+                <h3>
+                  International Conference on Contemporary Engineering &
+                  Technology
+                </h3>
+                <button
+                  onClick={() =>
+                    openCertificate("/certificates/Conference.pdf")
+                  }
+                >
+                  View
+                </button>
+              </div>
+
+              <p> ICCET 2026 <br />
+                Certificate of Presentation — SkillSage: Adaptive Career
+                Roadmap Generator
+              </p>
+
+            </div>
+
+
+        </div>
+
         <div className="certifications-divider"></div>
         <CertificateModal
-            isOpen={isOpen}
-            certificate={selectedCertificate}
-            onClose={closeCertificate}
+          isOpen={isOpen}
+          certificate={selectedCertificate}
+          onClose={closeCertificate}
         />
 
       </div>
-      
+
     </section>
+
   );
 }

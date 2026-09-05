@@ -16,18 +16,18 @@ import CertificateModal from "./CertificateModal";
 
 
 function Achievements() {
-const [isOpen, setIsOpen] = useState(false);
-const [selectedCertificate, setSelectedCertificate] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedCertificate, setSelectedCertificate] = useState("");
 
-const openCertificate = (path) => {
-  setSelectedCertificate(path);
-  setIsOpen(true);
-};
+  const openCertificate = (path) => {
+    setSelectedCertificate(path);
+    setIsOpen(true);
+  };
 
-const closeCertificate = () => {
-  setIsOpen(false);
-  setSelectedCertificate("");
-};
+  const closeCertificate = () => {
+    setIsOpen(false);
+    setSelectedCertificate("");
+  };
   return (
     <section className="achievements">
 
@@ -39,202 +39,255 @@ const closeCertificate = () => {
         Technical Innovation
       </h2>
 
-<div className="achievement-card">
+      <div className="achievement-card">
 
-  <div className="achievement-content">
+        <div className="achievement-content">
 
-    <div className="achievement-header">
+          <div className="achievement-header">
 
-      <div className="achievement-icon">
-        <Trophy size={34} strokeWidth={1.8} />
+            <div className="achievement-icon">
+              <Trophy size={34} strokeWidth={1.8} />
+            </div>
+
+            <div className="achievement-heading">
+              <h3>Smart India Hackathon 2025</h3>
+
+              <span className="achievement-subtitle">
+                Grand Finalist • Team Ataltra
+              </span>
+            </div>
+
+          </div>
+
+          <p>
+            Reached the Grand Finale of Smart India Hackathon 2025 under the
+            Blockchain & Cybersecurity theme with ExploreSure, an indigenous IoT,
+            AI and Blockchain-based digital security solution.
+          </p>
+
+          <ul>
+            <li>Team Lead for Team Ataltra</li>
+            <li>Blockchain & Cybersecurity</li>
+          </ul>
+
+          <div className="achievement-actions">
+
+            <button
+              className="achievement-btn"
+              onClick={() => openCertificate("/achievements/sih.pdf")}
+            >
+              <FaLightbulb size={15} />
+              Explore Idea
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div className="achievement-card">
+
+        <div className="achievement-content">
+
+          <div className="achievement-header">
+
+            <div className="achievement-icon">
+              <Award size={34} strokeWidth={1.8} />
+            </div>
+
+            <div className="achievement-heading">
+              <h3>Google Developer Profile</h3>
+
+              <span className="achievement-subtitle">
+                Developer Profile • Verified Skill Development
+              </span>
+            </div>
+
+          </div>
+
+          <p>
+            Recognized through the Google Developer Program for completing hands-on
+            learning experiences and earning verified skill badges.
+          </p>
+
+          <ul>
+            <li>15 Google Developer Skill Badges</li>
+            <li>Machine Learning Path</li>
+          </ul>
+
+          <div className="achievement-actions">
+
+            <button
+              className="achievement-btn"
+              onClick={() =>
+                window.open(
+                  "https://me.developers.google.com/u/109961771031311950661",
+                  "_blank"
+                )
+              }
+            >
+              <FaExternalLinkAlt size={14} />
+              View Profile
+            </button>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div className="achievement-heading">
-        <h3>Smart India Hackathon 2025</h3>
+      <div className="achievement-card">
 
-        <span className="achievement-subtitle">
-          Grand Finalist • Team Ataltra
-        </span>
+        <div className="achievement-content">
+
+          <div className="achievement-header">
+
+            <div className="achievement-icon">
+              <Award size={34} strokeWidth={1.8} />
+            </div>
+
+            <div className="achievement-heading">
+              <h3>Microsoft Learn Profile</h3>
+
+              <span className="achievement-subtitle">
+                Learning Profile • Technical Skill Development
+              </span>
+            </div>
+
+          </div>
+
+          <p>
+            Recognized through Microsoft Learn for completing hands-on technical
+            training and developing skills across cloud, IoT, networking, security,
+            and developer technologies.
+          </p>
+
+          <ul>
+            <li>24 Microsoft Learn Badges & 3 Learning Path Trophies</li>
+            <li>Azure, IoT & GitHub Skill Development</li>
+          </ul>
+
+          <div className="achievement-actions">
+
+            <button
+              className="achievement-btn"
+              onClick={() =>
+                window.open(
+                  "https://learn.microsoft.com/en-us/users/chetanaingle-0789/",
+                  "_blank"
+                )
+              }
+            >
+              <FaExternalLinkAlt size={14} />
+              View Profile
+            </button>
+
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
-
-    <p>
-      Reached the Grand Finale of Smart India Hackathon 2025 under the
-      Blockchain & Cybersecurity theme with ExploreSure, an indigenous IoT,
-      AI and Blockchain-based digital security solution.
-    </p>
-
-    <ul>
-      <li>Team Lead for Team Ataltra</li>
-      <li>Blockchain & Cybersecurity</li>
-    </ul>
-
-    <div className="achievement-actions">
-
-      <button
-        className="achievement-btn"
-        onClick={() => openCertificate("/achievements/sih.pdf")}
-      >
-        <FaLightbulb size={15}/>
-        Explore Idea
-      </button>
-
-    </div>
-
-  </div>
-
-</div>
-<div className="achievement-card">
-
-  <div className="achievement-content">
-
-    <div className="achievement-header">
-
-      <div className="achievement-icon">
-        <Award size={34} strokeWidth={1.8} />
-      </div>
-
-      <div className="achievement-heading">
-        <h3>Google Developer Profile</h3>
-
-        <span className="achievement-subtitle">
-          Public Developer Profile • Skill Development
-        </span>
-      </div>
-
-    </div>
-
-    <p>
-      Recognized through the Google Developer Program for completing hands-on
-      learning experiences and earning verified skill badges.
-    </p>
-
-    <ul>
-      <li>15 Google Developer Skill Badges</li>
-      <li>Machine Learning Path</li>
-    </ul>
-
-    <div className="achievement-actions">
-
-      <button
-        className="achievement-btn"
-        onClick={() =>
-          window.open(
-            "https://me.developers.google.com/u/109961771031311950661",
-            "_blank"
-          )
-        }
-      >
-        <FaExternalLinkAlt size={14} />
-        View Profile
-      </button>
-
-    </div>
-
-  </div>
-
-</div>
       <h2 className="section-title">
         Beyond Development
       </h2>
 
       <div className="achievement-card">
 
-  <div className="achievement-content">
+        <div className="achievement-content">
 
-    <div className="achievement-header">
+          <div className="achievement-header">
 
-      <div className="achievement-icon">
-        <Music4 size={34} strokeWidth={1.8} />
+            <div className="achievement-icon">
+              <Music4 size={34} strokeWidth={1.8} />
+            </div>
+
+            <div className="achievement-heading">
+
+              <h3>Best Self Composed Music</h3>
+
+              <span className="achievement-subtitle">
+                Firodiya Karandak • Golden Jubilee (2024)
+              </span>
+
+            </div>
+
+          </div>
+
+          <p>
+            Felicitated for Best Self-Composed Music by the renowned musician and
+            composer duo Ajay–Atul at the Golden Jubilee of Firodiya Karandak 2024.
+          </p>
+
+          <ul>
+            <li>Best Self Composed Music Award</li>
+            <li>An Intercollegiate multi-talent competition</li>
+          </ul>
+
+          <div className="achievement-actions">
+
+            <button
+              className="achievement-btn"
+              onClick={() => openCertificate("/achievements/firodia.pdf")}
+            >
+              <FaMedal size={15} />
+              Laurels
+            </button>
+
+          </div>
+
+        </div>
+
       </div>
-
-      <div className="achievement-heading">
-
-        <h3>Best Self Composed Music</h3>
-
-        <span className="achievement-subtitle">
-          Firodiya Karandak • Golden Jubilee (2024)
-        </span>
-
-      </div>
-
-    </div>
-
-    <p>
-      Felicitated for Best Self-Composed Music by the renowned musician and
-      composer duo Ajay–Atul at the Golden Jubilee of Firodiya Karandak 2024.
-    </p>
-
-    <ul>
-      <li>Best Self Composed Music Award</li>
-      <li>An Intercollegiate multi-talent competition</li>
-    </ul>
-
-    <div className="achievement-actions">
-
-      <button
-        className="achievement-btn"
-        onClick={() => openCertificate("/achievements/firodia.pdf")}
-      >
-        <FaMedal size={15}/>
-        Laurels
-      </button>
-
-    </div>
-
-  </div>
-
-</div>
 
       <div className="achievement-card">
 
-  <div className="achievement-content">
+        <div className="achievement-content">
 
-    <div className="achievement-header">
+          <div className="achievement-header">
 
-      <div className="achievement-icon">
-        <Crown size={34} strokeWidth={1.8} />
+            <div className="achievement-icon">
+              <Crown size={34} strokeWidth={1.8} />
+            </div>
+
+            <div className="achievement-heading">
+
+              <h3>Music Head</h3>
+
+              <span className="achievement-subtitle">
+                AAVEG KALAMANDAL
+              </span>
+
+            </div>
+
+          </div>
+
+          <p>
+            Led the college music team for major intercollegiate competitions
+            including Firodiya Karandak, Sakal Karandak and Vinodottam Karandak,
+            directing music production and mentoring performers.
+          </p>
+
+          <ul>
+            <li>Managed rehearsals and stage execution</li>
+            <li>Recipient of multiple music, singing and poetry recognitions</li>
+          </ul>
+
+          <div className="achievement-actions">
+
+            <button
+              className="achievement-btn"
+              onClick={() => openCertificate("/achievements/artistic.pdf")}
+            >
+              <FaAward size={15} />
+              Recognitions
+            </button>
+
+          </div>
+
+        </div>
+
       </div>
-
-      <div className="achievement-heading">
-
-        <h3>Music Head</h3>
-
-        <span className="achievement-subtitle">
-          AAVEG KALAMANDAL
-        </span>
-
-      </div>
-
-    </div>
-
-    <p>
-      Led the college music team for major intercollegiate competitions
-      including Firodiya Karandak, Sakal Karandak and Vinodottam Karandak,
-      directing music production and mentoring performers.
-    </p>
-
-    <ul>
-      <li>Managed rehearsals and stage execution</li>
-      <li>Recipient of multiple music, singing and poetry recognitions</li>
-    </ul>
-
-    <div className="achievement-actions">
-
-      <button
-        className="achievement-btn"
-        onClick={() => openCertificate("/achievements/artistic.pdf")}
-      >
-        <FaAward size={15}/>
-        Recognitions
-      </button>
-
-    </div>
-
-  </div>
-
-</div>
       <div className="section-divider"></div>
       <CertificateModal
         isOpen={isOpen}
