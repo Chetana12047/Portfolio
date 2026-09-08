@@ -57,7 +57,7 @@ export default function Projects() {
             <div className="project-links skillsage-links">
 
               <a
-                href="https://skillsage-production-d291.up.railway.app"
+                href="https://skill-sage-lemon.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
