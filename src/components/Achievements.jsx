@@ -3,6 +3,8 @@ import {
   Trophy,
   Music4,
   Crown,
+  Ribbon,
+  Gem,
 } from "lucide-react";
 import {
   FaLightbulb,
@@ -12,6 +14,7 @@ import {
   FaGoogle,
   FaMicrosoft,
 } from "react-icons/fa";
+import { BadgeCheck } from "lucide-react";
 import { useState } from "react";
 import CertificateModal from "./CertificateModal";
 
@@ -190,6 +193,59 @@ function Achievements() {
       </div>
 
       <h2 className="section-title">
+        Distinctive Excellence
+      </h2>
+
+      <div className="achievement-card">
+
+        <div className="achievement-content">
+
+          <div className="achievement-header">
+
+            <div className="achievement-icon">
+              <Ribbon size={34} strokeWidth={1.8} />
+            </div>
+
+            <div className="achievement-heading">
+
+              <h3>Meritorious Accomplishments</h3>
+
+              <span className="achievement-subtitle">
+                A Mark of Dedication
+              </span>
+
+            </div>
+
+          </div>
+
+          <p>
+            Honored for demonstrating versatility, meaningful engagement, and the ability to excel across academics, technical fields, and community involvement.
+          </p>
+
+          <ul>
+            <li>Combined strong academic performance with technical and creative interests</li>
+            <li>Actively contributed to community initiatives and social activities</li>
+          </ul>
+
+          <div className="achievement-actions">
+
+            <button
+              className="achievement-btn"
+              onClick={() =>
+                openCertificate("/achievements/distinction.pdf")
+              }
+            >
+              <Gem size={18} strokeWidth={2} />
+              Honours
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <h2 className="section-title">
         Beyond Development
       </h2>
 
@@ -221,7 +277,7 @@ function Achievements() {
           </p>
 
           <ul>
-            <li>Best Self Composed Music Award</li>
+            <li>Recognized for exceptional musical talent and creativity</li>
             <li>An Intercollegiate multi-talent competition</li>
           </ul>
 
