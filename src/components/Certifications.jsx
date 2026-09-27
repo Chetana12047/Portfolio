@@ -288,12 +288,12 @@ export default function Certifications() {
 
               <div className="certificate-header different-positioning">
                 <h3>
-                  International Conference on Contemporary Engineering &
+                  14th International Conference on Contemporary Engineering &
                   Technology
                 </h3>
                 <button
                   onClick={() =>
-                    openCertificate("/certificates/Conference.pdf")
+                    openCertificate("/certificates/ICCET.pdf")
                   }
                 >
                   View
@@ -301,11 +301,32 @@ export default function Certifications() {
               </div>
 
               <p> ICCET 2026 <br />
-                Certificate of Presentation — SkillSage: Adaptive Career
-                Roadmap Generator
+                Presented — SkillSage: Adaptive Career Roadmap Generator
               </p>
 
             </div>
+
+            <div className="certificate-card">
+
+              <div className="certificate-header different-positioning">
+                <h3>
+                  4th International Conference on Computational Applied Sciences & Their Applications
+                </h3>
+                <button
+                  onClick={() =>
+                    openCertificate("/certificates/ICCASA.pdf")
+                  }
+                >
+                  View
+                </button>
+              </div>
+
+              <p> ICCASA 2026 <br />
+                Presented — Neurotrace: Behavioral Productivity Analytics Platform
+              </p>
+
+            </div>
+
 
 
         </div>
