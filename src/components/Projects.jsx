@@ -1,7 +1,7 @@
 import "../styles/projects.css";
 import {
   FaGithub,
-    FaFilePdf,
+  FaFilePdf,
 } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 
@@ -66,7 +66,7 @@ export default function Projects() {
               </a>
 
               <a
-              className="paper-btn"
+                className="paper-btn"
                 href="/Projects/skillsage-research-paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -114,8 +114,8 @@ export default function Projects() {
 
             <div className="project-section">
               <h4>IMPLEMENTATION</h4>
-              <p>eveloped a real-time behavioral analytics system that records browser 
-                and desktop activity, categorizes digital behavior, generates interactive 
+              <p>Developed a real-time behavioral analytics system that records browser
+                and desktop activity, categorizes digital behavior, generates interactive
                 dashboards, timelines, focus analytics, and actionable productivity insights.</p>
             </div>
 
@@ -131,7 +131,7 @@ export default function Projects() {
               <p>Next.js • React • TypeScript • Tailwind CSS • Supabase • Node.js • Recharts</p>
             </div>
 
-            <div className="project-links">
+            <div className="project-links skillsage-links">
               <a
                 href="https://neuro-trace-indol.vercel.app/"
                 target="_blank"
@@ -139,6 +139,23 @@ export default function Projects() {
               >
                 <FaGlobe size={15.5} />
                 Live Demo
+              </a>
+              <a
+
+                className="paper-btn"
+
+                href="/Projects/NeuroTrace_Research_Paper.pdf"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+
+              >
+
+                <FaFilePdf size={15} />
+
+                Conference Paper
+
               </a>
 
               <a
